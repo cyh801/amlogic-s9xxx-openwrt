@@ -19,7 +19,8 @@ kernel_path=${amlogic_path}/amlogic-kernel
 armbian_path=${amlogic_path}/amlogic-armbian
 uboot_path=${amlogic_path}/amlogic-u-boot
 configfiles_path=${amlogic_path}/common-files
-kernel_library="https://github.com/ophub/flippy-kernel/tree/main/library"
+kernel_library="https://github.com/cyh801/flippy-kernel/tree/main/library"
+#kernel_library="https://github.com/ophub/flippy-kernel/tree/main/library"
 #kernel_library="https://github.com/ophub/flippy-kernel/trunk/library"
 #===== Do not modify the following parameter settings, End =======
 
