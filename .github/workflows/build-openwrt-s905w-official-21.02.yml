@@ -5,7 +5,7 @@
 # Source code repository: https://github.com/openwrt/openwrt / Branch: 21.02
 #========================================================================================================================
 
-name: Build OpenWrt official-21.02
+name: Build OpenWrt official s905w
 
 on:
   repository_dispatch:
