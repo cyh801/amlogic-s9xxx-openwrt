@@ -1,4 +1,3 @@
-
 #========================================================================================================================
 # https://github.com/ophub/amlogic-s9xxx-openwrt
 # Description: Automatically Build OpenWrt for Amlogic S9xxx STB
@@ -141,7 +140,7 @@ jobs:
         [ -d openwrt-armvirt ] || mkdir -p openwrt-armvirt
         cp -f openwrt/bin/targets/*/*/*.tar.gz openwrt-armvirt/ && sync
         sudo chmod +x make
-        sudo ./make -d -b s905x_s905w -k 5.10.70_5.4.150
+        sudo ./make -d -b s905w -k 5.4.157
         [ -d ipk ] || mkdir -p ipk
         cp -rf $(find openwrt/bin/packages/ -type f -name "*.ipk") ipk/ && sync
         sudo tar -czf ipk.tar.gz ipk && mv -f ipk.tar.gz out/ && sync
