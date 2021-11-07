@@ -29,13 +29,13 @@ sed -i "s|DISTRIB_REVISION='.*'|DISTRIB_REVISION='R$(date +%Y.%m.%d)'|g" package
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 
 # Add autocore
-svn co https://github.com/ophub/amlogic-s9xxx-openwrt/trunk/amlogic-s9xxx/common-files/patches/autocore package/lean/autocore
+svn co https://github.com/cyh801/amlogic-s9xxx-openwrt/tree/main/amlogic-s9xxx/common-files/patches/autocore package/lean/autocore
 
 # Add p7zip
-svn co https://github.com/hubutui/p7zip-lede/trunk package/lean/p7zip
+@svn co https://github.com/hubutui/p7zip-lede/trunk package/lean/p7zip
 
 # Add Discman
-svn co https://github.com/cyh801/luci-app-diskman/tree/master/applications/luci-app-diskman
+svn co https://github.com/cyh801/luci-app-diskman
 
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
