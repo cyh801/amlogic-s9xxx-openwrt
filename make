@@ -26,7 +26,7 @@ kernel_library="https://github.com/cyh801/flippy-kernel/tree/main/library"
 
 # Set firmware size ( BOOT_MB size >= 128, ROOT_MB size >= 320 )
 BOOT_MB=256
-ROOT_MB=5800
+ROOT_MB=2048
 
 tag() {
     echo -e " [ \033[1;32m ${1} \033[0m ]"
